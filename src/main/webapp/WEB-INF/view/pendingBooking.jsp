@@ -53,10 +53,10 @@ padding:10px;
 </tr>
 <c:forEach var="tempBooking" items="${bookingRecord }">
 <tr>
- <c:url var="seatConfirm" value="/seatConfirm">
+<c:url var="seatConfirm" value="/seatConfirm">
    <c:param name="bookingId" value="${tempBooking.bookingId }"/>
 </c:url>    
-<c:if test=
+
 <td>${tempBooking.user.userName}</td>
 <td>${tempBooking.flight.id}</td>
 <td>${tempBooking.flight.flightNumber}</td>
